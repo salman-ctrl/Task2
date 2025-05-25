@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Terpadu Modern</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>✨Welcome to My Personal Website✨</h1>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <input type="text" id="clock" class="clock-display" readonly>
+        <button class="nav-button" onclick="showBox('kalkulatorBox', this)">🧮 Kalkulator</button>
+        <button class="nav-button" onclick="showBox('biodataBox', this)">👤 Biodata</button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Kalkulator -->
+        <div class="box" id="kalkulatorBox">
+            <h3>🧮 Kalkulator Modern</h3>
+            <div class="input-group">
+                <label>Bilangan Pertama</label>
+                <input type="number" id="bil1" placeholder="Masukkan angka...">
+            </div>
+            <div class="input-group">
+                <label>Bilangan Kedua</label>
+                <input type="number" id="bil2" placeholder="Masukkan angka...">
+            </div>
+            <div class="input-group">
+                <label>Hasil Perhitungan</label>
+                <input type="text" id="hasil" readonly placeholder="Hasil akan muncul di sini...">
+            </div>
+            <div class="calc-buttons">
+                <button class="calc-button" onclick="hitung('+')">+</button>
+                <button class="calc-button" onclick="hitung('-')">−</button>
+                <button class="calc-button" onclick="hitung('*')">×</button>
+                <button class="calc-button" onclick="hitung('/')">÷</button>
+            </div>
+        </div>
+
+        <!-- Biodata -->
+        <div class="box" id="biodataBox">
+            <h3>👤 Profil Saya</h3>
+            <img src="Bungasky.jpg" alt="Foto Profil" class="profile-img">
+
+            <div class="biodata-item">
+                <b>Nama:</b> Bunga Rahmadani
+            </div>
+            <div class="biodata-item">
+                <b>NIM:</b> 24346022
+            </div>
+            <div class="biodata-item">
+                <b>Jenis Kelamin:</b> Perempuan
+            </div>
+            <div class="biodata-item">
+                <b>WhatsApp:</b> <a href="https://wa.me/6282279703234" target="_blank">📱 Hubungi Saya</a>
+            </div>
+            <div class="biodata-item">
+                <b>Instagram:</b> <a href="https://www.instagram.com/bungasky_?igsh=eHhxYWpyMHpjMTJ2" target="_blank">📸
+                    @bungasky</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <button class="footer-button" onclick="hideAllBoxes()">🏠 Beranda</button>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
